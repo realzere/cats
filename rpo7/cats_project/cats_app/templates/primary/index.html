@@ -1,0 +1,52 @@
+{% extends '../base.html' %}
+{% load static %}
+
+
+{% block content %}
+<section class="home">
+    <div class="container">
+        <h1 class="home-title">Welcome to meow Application</h1>
+        <p class="home-description">The cat (Felis catus), commonly referred to as the domestic cat or house cat, is the only domesticated species in the family Felidae. Recent advances in archaeology and genetics have shown that the domestication of the cat occurred in the Near East around 7500 BC. It is commonly kept as a house pet and farm cat, but also ranges freely as a feral cat avoiding human contact. It is valued by humans for companionship and its ability to kill vermin.</p>
+        <a href="#" class="button-outline-light">Last news</a>
+    </div>
+</section>
+<section class="last-news">
+    <div class="container">
+        <h2 class="primary-title">Last news</h2>
+        <div class="news-row">
+            <div class="news-card">
+                <div class="news-img">
+                    <img src="{% static './images/cat-2083492_640.jpg' %}" alt="cats">
+                </div>
+                <h3 class="news-title">cats</h3>
+                <h3 class="news-date">06.01.2024</h3>
+                <a href="#" class="button-primary">Read</a>
+            </div>
+            <div class="news-card">
+                <div class="news-img">
+                    <img src="{% static './images/cat1.jpg' %}" alt="cats">
+                </div>
+                <h3 class="news-title">cats</h3>
+                <h3 class="news-date">06.01.2024</h3>
+                <a href="#" class="button-primary">Read</a>
+            </div>
+            <div class="news-card">
+                <div class="news-img">
+                    <img src="{% static './images/cat2.jpg' %}" alt="cats">
+                </div>
+                <h3 class="news-title">cats</h3>
+                <h3 class="news-date">06.01.2024</h3>
+                <a href="#" class="button-primary">Read</a>
+            </div>
+            <div class="news-card">
+                <div class="news-img">
+                    <img src="{% static './images/cat3.jpg' %}" alt="cats">
+                </div>
+                <h3 class="news-title">cats</h3>
+                <h3 class="news-date">06.01.2024</h3>
+                <a href="#" class="button-primary">Read</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
